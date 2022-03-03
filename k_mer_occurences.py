@@ -10,4 +10,4 @@ def count(text,pattern):
     return count
 
 res = count("","")
-print(res)
+print(res)                  # result will be the number of times a given pattern of length k appears in a given text
