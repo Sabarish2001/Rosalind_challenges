@@ -12,4 +12,4 @@ pattern = input("")
 
 res = pattern_occurences(genome,pattern)
 for i in res:
-    print(i,end=" ")
+    print(i,end=" ")                # answer will be the starting positions of a given pattern in the text
