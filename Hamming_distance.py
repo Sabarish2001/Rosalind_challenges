@@ -8,6 +8,6 @@ def Hamming_distance(p, q):   #Function takes 2 parameters p and q which are str
         return "Strings of unequal size"    #If the condition fails, returning the message of unequal size
     else:
         for i in range(string_p):           # taking any of the either string and iterating to the whole length
-            if p[i] != q[i]:                # checking 
-                mismatches += 1
-    return mismatches
+            if p[i] != q[i]:                # checking if each character of p not matching with each and every character of q
+                mismatches += 1             # when the above condition is True mismatch is incremented
+    return mismatches                       # Return all the mismatch found in the strings
