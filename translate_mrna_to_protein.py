@@ -1,3 +1,7 @@
+#Program to translate mRNA -> Protein
+
+#To translate into Protein we first need to import bring in the codon table(genetic code) 
+
 codon_table = {"UUU": "F","UUC":"F","UUA":"L","UUG":"L",
                "CUU":"L","CUC":"L","CUA":"L","CUG":"L",
                "AUU":"I","AUC":"I","AUA":"I","AUG":"M",
@@ -16,9 +20,9 @@ codon_table = {"UUU": "F","UUC":"F","UUA":"L","UUG":"L",
                "GGU":"G","GGC":"G","GGA":"G","GGG":"G"}
 
 
-def translate(sequence,codon=3):
-    seq_len = len(sequence)
-    protein = ""
+def translate(sequence,codon=3):            #Defining the function translate that will translate mRNA -> Protein
+    seq_len = len(sequence)                 #Initializing seq_len variable to length of the sequence
+    protein = ""                            #Initializing variable protein to a empty string
     for i in range(0,(seq_len-3),codon):
         if sequence[i: i + codon] in codon_table:
             triplet = sequence[i:i + codon]
