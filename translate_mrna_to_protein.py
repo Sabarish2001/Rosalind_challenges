@@ -23,7 +23,7 @@ codon_table = {"UUU": "F","UUC":"F","UUA":"L","UUG":"L",
 def translate(sequence,codon=3):            #Defining the function translate that will translate mRNA -> Protein
     seq_len = len(sequence)                 #Initializing seq_len variable to length of the sequence
     protein = ""                            #Initializing variable protein to a empty string
-    for i in range(0,(seq_len-3),codon):
+    for i in range(0,(seq_len-3),codon):             #
         if sequence[i: i + codon] in codon_table:
             triplet = sequence[i:i + codon]
             protein += codon_table[triplet]            
